@@ -70,7 +70,15 @@ hidden_file_extensions:
   - props
   - targets
 
-first_line_match: (?i)(nativescript\.org\/tns\.xsd\s*)
+first_line_match: |-
+    (?x:
+      ^(?:
+          <\?xml\s
+        | \s*<([\w-]+):Envelope\s+xmlns:\1\s*=\s*"http://schemas.xmlsoap.org/soap/envelope/"\s*>
+        | \s*(?i:<!DOCTYPE\s+(?!html[ \t\n\f>]))
+      )
+    )
+
 ##############################################################################
 
 variables:
