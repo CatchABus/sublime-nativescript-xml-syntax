@@ -1,0 +1,9 @@
+============================================================
+Thank you for installing {N}ativeScript Core XML Syntax
+============================================================
+
+This package adds syntax highlighting for XML files used by NativeScript Core flavor.
+See: https://docs.nativescript.org/tutorial/plain.html#getting-started-with-nativescript
+
+Syntax is identical to the default one for XML with the addition of highlighting view model bindings.  
+The highlight color is the one used for CDATA tags.
